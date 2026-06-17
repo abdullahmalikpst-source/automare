@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automare | Gulf Hospitality Automation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons (if needed) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- n8n Chat Widget CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button id="lang-en" class="active">English</button>
+        <button id="lang-ar">العربية</button>
+    </div>
+
+    <!-- Navigation (Optional, but good for one-page) -->
+    <nav class="navbar glass">
+        <div class="logo" style="display: flex; align-items: center; height: 60px;">
+            <img src="assets/logo.png" alt="Automare Logo" style="height: 180px; width: auto; transform: scale(0.8); transform-origin: left center;">
+        </div>
+        <div class="nav-links">
+            <a href="#dashboard" data-i18n="nav_home">Home</a>
+            <a href="#problem" data-i18n="nav_problem">The Problem</a>
+            <a href="#solution" data-i18n="nav_solution">Features</a>
+            <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+            <a href="#team" data-i18n="nav_team">Team</a>
+            <a href="https://wa.me/923123686099" target="_blank" data-i18n="nav_contact" class="btn-primary btn-small" style="background-color: #25D366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);"><i class="fab fa-whatsapp"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- Dashboard Hero (Replaces Old Hero, Problem, Benefits, Solution) -->
+    <section id="dashboard" class="dashboard-hero">
+        <div class="dash-content">
+            <!-- Center Title -->
+            <div class="dash-center-title">
+                <img src="assets/logo.png" alt="Automare Logo" style="height: 100px; margin-bottom: 2rem; display: inline-block;">
+                <h1>Automating <span>Hospitality</span>.</h1>
+                <p>Elevating Guest Experience.</p>
+            </div>
+            
+            <!-- 4 Grid Features -->
+            <div class="dash-grid">
+                <!-- Card 1 -->
+                <div class="dash-card">
+                    <h3>WhatsApp Bots</h3>
+                    <p>Intelligent Guest Interactions - 5,000+ per month</p>
+                    <div class="phone-mockup">
+                        <div class="chat-bubble chat-guest">Can I book a spa slot?</div>
+                        <div class="chat-bubble chat-bot">Yes! Available slots are 2PM and 4PM today. Reply with a time.</div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="dash-card">
+                    <h3>Voice Agents</h3>
+                    <p>Multilingual AI Voice Response - English, Arabic. Reduced wait times by 80%.</p>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <i class="fas fa-headphones-alt" style="font-size: 5rem; color: var(--primary-orange);"></i>
+                        <br>
+                        <i class="fas fa-wave-square" style="font-size: 3rem; color: var(--dark-coral); margin-top:1rem;"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="dash-card">
+                    <h3>Owner Reports</h3>
+                    <p>Real-time, customized reporting with deep analytics.</p>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom: 1rem;">
+                            <span style="color:#FFF;">Occupancy</span>
+                            <span style="color:var(--primary-orange); font-weight:bold;">86% <i class="fas fa-arrow-up"></i></span>
+                        </div>
+                        <div style="display:flex; justify-content:space-between;">
+                            <span style="color:#FFF;">ADR</span>
+                            <span style="color:var(--primary-orange); font-weight:bold;">$250 <i class="fas fa-arrow-up"></i></span>
+                        </div>
+                        <i class="fas fa-chart-line" style="font-size: 4rem; color: var(--primary-orange); margin-top:1rem; display:block; text-align:center;"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="dash-card">
+                    <h3>Social Media Autopilot</h3>
+                    <p>Automated Post Scheduling - 25% Engagement Uplift.</p>
+                    <div style="margin-top: 1rem;">
+                        <div style="display:flex; gap:10px; align-items:center; margin-bottom:1rem; background:rgba(255,255,255,0.1); padding:10px; border-radius:10px;">
+                            <i class="fab fa-instagram" style="font-size: 2rem; color: #E1306C;"></i>
+                            <span style="font-size:0.8rem;">Celebrate your weekend getaway...</span>
+                        </div>
+                        <div style="display:flex; gap:10px; align-items:center; background:rgba(255,255,255,0.1); padding:10px; border-radius:10px;">
+                            <i class="fab fa-twitter" style="font-size: 2rem; color: #1DA1F2;"></i>
+                            <span style="font-size:0.8rem;">Celebrate your weekend getaway...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Metrics Bar -->
+            <div class="metrics-bar">
+                <div class="metric">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Operational Efficiency <strong style="color:var(--primary-orange);">+40%</strong></span>
+                </div>
+                <div class="metric">
+                    <i class="fas fa-users"></i>
+                    <span>Guest Satisfaction <strong style="color:var(--primary-orange);">+30%</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section id="demo" style="padding: 5rem 0; background-color: var(--white);">
+        <div class="container text-center">
+            <h2 class="section-title text-dark">See Automare in Action</h2>
+            <div style="max-width: 900px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 5px solid var(--primary-orange);">
+                <video controls autoplay muted loop style="width: 100%; display: block;">
+                    <source src="assets/Demo video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: The Problem -->
+    <section id="problem" class="problem bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="prob_title">Are Manual Tasks Capping Your Growth?</h2>
+            
+            <div class="grid-3 problem-cards">
+                <div class="card glass-card">
+                    <div class="icon-circle"><i class="fas fa-clock"></i></div>
+                    <h3 data-i18n="prob_1_title">The 2 AM Missed Booking</h3>
+                    <p data-i18n="prob_1_desc">Losing high-paying guests because your team is asleep when inquiries come in.</p>
+                </div>
+                
+                <div class="card glass-card">
+                    <div class="icon-circle"><i class="fas fa-inbox"></i></div>
+                    <h3 data-i18n="prob_2_title">Inbox Chaos</h3>
+                    <p data-i18n="prob_2_desc">Spending 4+ hours daily copy-pasting repetitive WhatsApp replies and email confirmations.</p>
+                </div>
+                
+                <div class="card glass-card">
+                    <div class="icon-circle"><i class="fas fa-eye-slash"></i></div>
+                    <h3 data-i18n="prob_3_title">Zero Visibility</h3>
+                    <p data-i18n="prob_3_desc">Waking up without a clear, concise report of overnight performance and daily check-ins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Benefits -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="ben_title">Why Automare?</h2>
+            
+            <div class="grid-3 benefits-cards">
+                <div class="card glass-card">
+                    <div class="icon-circle"><i class="fas fa-rocket"></i></div>
+                    <h3 data-i18n="ben_1_title">Faster Response Times</h3>
+                    <p data-i18n="ben_1_desc">Reply to guests in under 5 seconds.</p>
+                </div>
+                
+                <div class="card glass-card">
+                    <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+                    <h3 data-i18n="ben_2_title">Increased Bookings</h3>
+                    <p data-i18n="ben_2_desc">Capture leads 24/7 without a night shift.</p>
+                </div>
+                
+                <div class="card glass-card">
+                    <div class="icon-circle"><i class="fas fa-arrow-down"></i></div>
+                    <h3 data-i18n="ben_3_title">Lower Operational Costs</h3>
+                    <p data-i18n="ben_3_desc">Reduce the need for manual data entry staff.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The Solution -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="sol_title">Your PMS Records Bookings. <span class="text-orange">We Automate Everything Else.</span></h2>
+            
+            <div class="grid-3 solution-cards">
+                <div class="card solution-card">
+                    <i class="fab fa-whatsapp coral-icon"></i>
+                    <h3 data-i18n="sol_1_title">24/7 WhatsApp AI Chatbots</h3>
+                    <p data-i18n="sol_1_desc">Instant, intelligent replies to guest inquiries in both English and Arabic. Never miss a lead.</p>
+                </div>
+                
+                <div class="card solution-card">
+                    <i class="fas fa-headset coral-icon"></i>
+                    <h3 data-i18n="sol_2_title">AI Voice Calling Agents</h3>
+                    <p data-i18n="sol_2_desc">Automated check-in reminders and booking confirmations via human-like voice calls.</p>
+                </div>
+                
+                <div class="card solution-card">
+                    <i class="fas fa-envelope-open-text coral-icon"></i>
+                    <h3 data-i18n="sol_3_title">Smart Gmail Classifier</h3>
+                    <p data-i18n="sol_3_desc">Automatically sorts incoming emails, prioritizes VIP guests, and auto-responds to standard queries.</p>
+                </div>
+                
+                <div class="card solution-card">
+                    <i class="fas fa-chart-pie coral-icon"></i>
+                    <h3 data-i18n="sol_4_title">Daily Owner Reports</h3>
+                    <p data-i18n="sol_4_desc">Wake up to an automated WhatsApp or Google Sheets summary of your property's daily performance.</p>
+                </div>
+                
+                <div class="card solution-card">
+                    <i class="fas fa-share-alt coral-icon"></i>
+                    <h3 data-i18n="sol_5_title">Social Media Engine</h3>
+                    <p data-i18n="sol_5_desc">Auto-posting engine that keeps your brand active online without manual effort.</p>
+                </div>
+                
+                <div class="card solution-card">
+                    <i class="fas fa-plug coral-icon"></i>
+                    <h3 data-i18n="sol_6_title">Custom PMS Integration</h3>
+                    <p data-i18n="sol_6_desc">We connect seamlessly via webhooks and APIs to supercharge your existing software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: How It Works -->
+    <section id="how-it-works" class="how-it-works bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="hiw_title">Our 3-Step Process</h2>
+            
+            <div class="grid-3 step-cards">
+                <div class="card glass-card text-center">
+                    <div class="step-num text-orange" style="font-size: 3rem; font-weight: bold;">1</div>
+                    <h3 data-i18n="hiw_1_title">Free Audit</h3>
+                    <p data-i18n="hiw_1_desc">We analyze your current manual workflows and identify bottlenecks.</p>
+                </div>
+                
+                <div class="card glass-card text-center">
+                    <div class="step-num text-orange" style="font-size: 3rem; font-weight: bold;">2</div>
+                    <h3 data-i18n="hiw_2_title">Custom Build</h3>
+                    <p data-i18n="hiw_2_desc">We design and deploy AI agents and webhooks tailored to your specific PMS.</p>
+                </div>
+                
+                <div class="card glass-card text-center">
+                    <div class="step-num text-orange" style="font-size: 3rem; font-weight: bold;">3</div>
+                    <h3 data-i18n="hiw_3_title">Go Live & Relax</h3>
+                    <p data-i18n="hiw_3_desc">We launch the system, train your team, and provide ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Packages & Pricing -->
+    <section id="pricing" class="pricing bg-light">
+        <div class="container">
+            <h2 class="section-title text-center text-dark" data-i18n="price_title">Transparent Pricing for Tech-Forward Hosts</h2>
+            <p class="text-center mb-4 text-dark" data-i18n="price_subtitle">Monthly maintenance retainers available starting at $400/month.</p>
+            
+            <div class="grid-3 pricing-cards">
+                <!-- Starter -->
+                <div class="card pricing-card">
+                    <h3 data-i18n="price_1_name">Starter Tier</h3>
+                    <div class="price" data-i18n="price_1_amt">$800 - $1,200 <span class="setup">One-time setup</span></div>
+                    <ul class="features">
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_1_f1">WhatsApp Chatbot</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_1_f2">Gmail Classifier</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_1_f3">Booking Confirmation Automation</span></li>
+                    </ul>
+                    <a href="#calendly" class="btn-outline" data-i18n="price_btn">Get Started</a>
+                </div>
+                
+                <!-- Growth -->
+                <div class="card pricing-card popular">
+                    <div class="popular-badge" data-i18n="price_popular">Most Popular</div>
+                    <h3 data-i18n="price_2_name">Growth Tier</h3>
+                    <div class="price" data-i18n="price_2_amt">$2,000 - $3,500 <span class="setup">One-time setup</span></div>
+                    <ul class="features">
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_2_f1">Starter Package +</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_2_f2">AI Voice Calling Agent</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_2_f3">Social Media Auto-Poster</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_2_f4">Owner Daily Reports</span></li>
+                    </ul>
+                    <a href="#calendly" class="btn-primary" data-i18n="price_btn">Get Started</a>
+                </div>
+                
+                <!-- Full System -->
+                <div class="card pricing-card">
+                    <h3 data-i18n="price_3_name">Full System Tier</h3>
+                    <div class="price" data-i18n="price_3_amt">$4,000 - $6,000 <span class="setup">One-time setup</span></div>
+                    <ul class="features">
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_3_f1">Everything +</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_3_f2">Custom PMS Integration</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_3_f3">Full Arabic Language Support</span></li>
+                        <li><i class="fas fa-check text-orange"></i> <span data-i18n="price_3_f4">30-Day Priority Support</span></li>
+                    </ul>
+                    <a href="#calendly" class="btn-outline" data-i18n="price_btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: The Team -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="team_title">The Gulf's Dedicated Hospitality Automation Specialists</h2>
+            
+            <div class="grid-3 team-cards">
+                <div class="card team-card">
+                    <img src="assets/Khadija Awan.jpg" alt="Khadija Awan" class="team-img" onerror="this.onerror=null; this.src='assets/logo.png'; this.style='object-fit:contain;'">
+                    <h3 data-i18n="team_1_name">Khadija Awan</h3>
+                    <p class="role text-orange" data-i18n="team_1_role">UAE Market Lead</p>
+                    <p class="desc" data-i18n="team_1_desc">Specializing in Dubai & Abu Dhabi holiday homes.</p>
+                    <a href="https://www.linkedin.com/in/khadija-b-a714aa214/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                
+                <div class="card team-card">
+                    <img src="assets/Laiba zafar.pg.jpg" alt="Laiba Zafar" class="team-img" onerror="this.onerror=null; this.src='assets/logo.png'; this.style='object-fit:contain;'">
+                    <h3 data-i18n="team_2_name">Laiba Zafar</h3>
+                    <p class="role text-orange" data-i18n="team_2_role">Saudi Arabia Market Lead</p>
+                    <p class="desc" data-i18n="team_2_desc">Supporting Vision 2030 hospitality growth in Riyadh & Jeddah.</p>
+                    <a href="https://www.linkedin.com/in/laiba-zafar-414268320/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                
+                <div class="card team-card">
+                    <img src="assets/Abdullah Malik.jpg" alt="Abdullah Malik" class="team-img" onerror="this.onerror=null; this.src='assets/logo.png'; this.style='object-fit:contain;'">
+                    <h3 data-i18n="team_3_name">Abdullah Malik</h3>
+                    <p class="role text-orange" data-i18n="team_3_role">Qatar & Gulf Market Lead</p>
+                    <p class="desc" data-i18n="team_3_desc">Serving boutique properties across Doha, Kuwait, and Oman.</p>
+                    <a href="https://www.linkedin.com/in/abdullah-malik-x/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: FAQ -->
+    <section id="faq" class="faq bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="faq_title">Frequently Asked Questions</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q1">Do I need to replace my current PMS?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a1">Not at all. Automare acts as an automation layer over your existing software. We integrate seamlessly with systems like Cloudbeds, Hostaway, and Little Hotelier via APIs and webhooks. Your PMS continues to record bookings, while we automate the communication and reporting that happens afterward.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q2">Will the AI Chatbots and Voice Agents sound robotic?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a2">No, we build our systems using advanced AI like Claude AI and ElevenLabs. Our voice calling agents and WhatsApp chatbots are designed to have natural, human-like conversations and can handle complex inquiries instantly, 24/7.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q3">Do your automated systems support Arabic?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a3">Yes, absolutely. Understanding the Gulf market, our chatbots and voice agents come with full Arabic language capability. This ensures your guests in Saudi Arabia, UAE, and the wider Gulf region receive localized and professional support.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q4">How much does the automation setup cost?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a4">We offer transparent pricing based on your property's needs. Our one-time setup fees range from $800 for our Starter package (WhatsApp bot & Gmail classification) up to $6,000 for a Full System with native PMS integration. We also offer monthly maintenance retainers starting at $400 to ensure your workflows run smoothly.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q5">What kind of properties do you work with?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a5">We specialize in tech-forward boutique guest houses, holiday homes, and short-term rentals, typically managing between 3 to 25 properties. We have dedicated team members specifically focused on the UAE, Saudi Arabia, and Qatar markets to provide customized, localized service.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q6">I am interested, what is the first step?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a6">The first step is to book a completely free, 15-minute Discovery Audit with us. On this short call, we will analyze your current manual tasks and identify the top 3 "quick wins" where automation can save you the most time immediately.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4 data-i18n="faq_q7">Will I have visibility over my daily operations?</h4><i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p data-i18n="faq_a7">Yes! One of our most popular workflows is the daily owner report. Our system automatically compiles overnight performance, new bookings, and guest inquiries into a clear report sent directly to your WhatsApp or email every morning.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendly Section -->
+    <section id="calendly" class="calendly bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="cal_title">Schedule Your Free Automation Audit</h2>
+            <div class="calendly-wrapper glass">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/team13aiml?background_color=ecebed&text_color=2d140b&primary_color=f15a11" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Lead Magnet & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="lead-magnet">
+                <h2 data-i18n="lm_title">Not Ready for a Call Yet?</h2>
+                <p data-i18n="lm_desc">Download our free guide: The Gulf Guest House Automation Checklist - 10 Tasks You Should Never Do Manually.</p>
+                <form id="leadForm" class="lead-form">
+                    <input type="email" placeholder="Enter your email" required data-i18n-placeholder="lm_ph">
+                    <button type="submit" class="btn-primary" data-i18n="lm_btn">Get The Free Checklist</button>
+                </form>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">Copyright &copy; 2026 Automare.ai</p>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- n8n Chat Widget Overrides -->
+    <style>
+        /* Change Shape using Official n8n Variables */
+        :root {
+            --chat--color--primary: #F15A11 !important; 
+            --chat--color--primary-shade-50: #d14a0e !important;
+            --chat--color--primary--shade-100: #b5400d !important;
+            
+            /* Shapes */
+            --chat--toggle--border-radius: 15px !important; /* Squircle Button */
+            --chat--window--border-radius: 20px 20px 20px 0 !important; /* Speech Bubble Window pointing to Left */
+        }
+    </style>
+
+    <!-- n8n Chat Widget -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://automare.app.n8n.cloud/webhook/9a26657a-f519-4b8b-8036-04c45b39346d/chat',
+            theme: {
+                button: {
+                    position: 'left'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
